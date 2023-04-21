@@ -7,7 +7,7 @@
             Console.WriteLine("Welcome To logical program");
             Console.WriteLine("Please select the program given below");
             Console.WriteLine("\n1:PrimeNumber\n2:ReverseNumber\n3:Couponnumber\n4:Perfectnumber\n5:Fibonacciseries\n6:Monthlypayment");
-            Console.WriteLine("\n7:Stopwatch\n8:Swapnib");
+            Console.WriteLine("\n7:Stopwatch\n8:Swapnib\n9:Temperatureconversion");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -45,6 +45,10 @@
                 case 8:
                     SwapNib myObj4 = new SwapNib();
                     myObj4.SwapNibbles(100);
+                    break;
+                case 9:
+                    Temperatureconversion myObj5 = new Temperatureconversion();
+                    myObj5.TempertatureConversionFind();
                     break;
                 default:
                     Console.WriteLine("Please select the given below program");
