@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome To logical program");
             Console.WriteLine("Please select the program given below");
-            Console.WriteLine("\n1:PrimeNumber\n2:ReverseNumber\n3:Couponnumber");
+            Console.WriteLine("\n1:PrimeNumber\n2:ReverseNumber\n3:Couponnumber\n4:Perfectnumber");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -24,6 +24,10 @@
                 case 3:
                     Couponnumber coupon = new Couponnumber();
                     coupon.FindCouponNumber();
+                    break;
+                case 4:
+                    PerfectNumber myObj = new PerfectNumber();
+                    myObj.FindperfectNo();
                     break;
                 default:
                     Console.WriteLine("Please select the given below program");
