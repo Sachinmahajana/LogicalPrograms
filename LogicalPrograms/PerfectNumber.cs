@@ -27,10 +27,6 @@ namespace LogicalPrograms
                 Console.WriteLine("Number is Not perfect Number");
             Console.ReadLine();
         }
-
-
-
-
     }
 }
     
