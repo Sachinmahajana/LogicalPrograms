@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome To logical program");
             Console.WriteLine("Please select the program given below");
-            Console.WriteLine("\n1:PrimeNumber\n2:ReverseNumber\n3:Couponnumber\n4:Perfectnumber");
+            Console.WriteLine("\n1:PrimeNumber\n2:ReverseNumber\n3:Couponnumber\n4:Perfectnumber\n5:Fibonacciseries");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -29,6 +29,10 @@
                     PerfectNumber myObj = new PerfectNumber();
                     myObj.FindperfectNo();
                     break;
+                case 5:
+                    Fibonacciseries myObj1 = new Fibonacciseries();
+                    myObj1.FindFibo();
+                    break;   
                 default:
                     Console.WriteLine("Please select the given below program");
                     break;
