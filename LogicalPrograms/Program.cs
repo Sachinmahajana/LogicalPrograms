@@ -7,6 +7,7 @@
             Console.WriteLine("Welcome To logical program");
             Console.WriteLine("Please select the program given below");
             Console.WriteLine("\n1:PrimeNumber\n2:ReverseNumber\n3:Couponnumber\n4:Perfectnumber\n5:Fibonacciseries\n6:Monthlypayment");
+            Console.WriteLine("\n7:Stopwatch");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -36,6 +37,10 @@
                 case 6:
                     MonthlyPayment myObj2 = new MonthlyPayment();
                     myObj2.monthlyPaymentfind();
+                    break;
+                case 7:
+                    StopWatch myObj3 = new StopWatch();
+                    myObj3.FindElapsedTime();
                     break;
                 default:
                     Console.WriteLine("Please select the given below program");
